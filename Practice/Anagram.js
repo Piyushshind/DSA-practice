@@ -14,4 +14,5 @@ function anna(sa, ta) {
    
 };
 let ans = anna(str,sr)
-console.log(ans)
+// console.log(ans)
+
