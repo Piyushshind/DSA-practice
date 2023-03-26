@@ -16,7 +16,7 @@ function sorting(arr){
   
      if(isSorted(arr)){
         newArr= arr;
-        return
+        return 
      }
      else if(arr[i]<arr[j]){
         i++
