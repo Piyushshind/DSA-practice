@@ -12,5 +12,33 @@ function findDuplicate(arr){
       if(val[1]==2) ans.push(val[0])
     }
     return ans;
+
+  //   let ob={};
+  // let ans =[];
+  //    for(let val of arr){
+  //      ob[val] = ob[val] ?  ob[val]+1 : 1
+  //    }
+  //    for (let val of arr){
+  //     if (ob[val]==2) 
+  //     ans.push(val)
+  //      ob[val]--
+  //    }
+  //    return ans
 }
 console.log(findDuplicate(arr));
+
+// for (let i = 0; i < n; i++) {
+
+//   if (mp.get(nums[i]) == undefined) mp.set(nums[i], 1)
+//   else { mp.set(nums[i], 2) }
+
+
+// }
+
+// for (const val of mp) {
+//   if (val[1] == 2) {
+//     ans.push(val[0])
+//     // console.log(val)
+//   }
+// }
+// return ans;
