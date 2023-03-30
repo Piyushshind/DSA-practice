@@ -5,11 +5,11 @@ function findDuplicate(arr){
  let map = new Map();
   for(let i=0;i<arr.length;i++){
     if(map.get(arr[i]) == undefined) map.set(arr[i],1)
-    else  map.set(arr[i],2)
+    else  map.set(arr[i], map.get(arr[i]) +1)
   }
     let ans = [];
     for(let val of map){
-      if(val[1]==2) ans.push(val[0])
+      if(val[1]>1) ans.push(val[0])
     }
     return ans;
 
