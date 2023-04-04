@@ -3,7 +3,6 @@ let b=[3,4,7]
 
 var n=a.length,m=b.length
 let c=new Array(m+n)
-
 let i=0,j=0,k=0
 while(i<n&&j<m){
     if(a[i]<b[j]){
