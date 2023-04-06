@@ -18,3 +18,15 @@ function isAnnagram(a,b){
      }
 }
 console.log(isAnnagram(l1,l2));
+
+
+
+
+
+
+
+
+
+
+
+
