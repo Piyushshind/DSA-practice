@@ -6,7 +6,7 @@ let obj ={
 let callingFun = function(city){
     console.log(this.first + " " + this.last + " " + city );
 }
-// call method 
+// call method (function borrowing)
 callingFun.call(obj)
 
 // apply method 
