@@ -6,6 +6,7 @@ function sliding(arr, k) {
   for (let i = 0; i < k; i++) {
     sum += arr[i];
   }
+  
   let max = sum;
 
   for (let j = k; j < arr.length; j++) {
