@@ -40,7 +40,7 @@ var removeDuplicates = function (n) {
 //   if(arr.length>1){
 //       ans1.push(arr[0],arr[arr.length-1])
 //   }else ans1.push(arr[0],arr[0])
-//   return ans1
+//    return ans1
 // }
 
 
