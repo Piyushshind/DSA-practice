@@ -12,7 +12,7 @@
 //  
 function arra(arr,n,k){
      let str ='';
-    for(let i=0;i<k;i++){
+     for(let i=0;i<k;i++){
          str += arr[i]
        for(let j=i+1; j<k; j++){
         str+=(arr[j])
