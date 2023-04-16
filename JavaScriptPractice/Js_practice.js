@@ -13,8 +13,8 @@ var removeDuplicates = function (n) {
 
 // console.log(removeDuplicates([2, 3, 4, 2, 3, 4, 5, 6, 7]));
  
-let nu = [5]
-let tr = 10
+// let nu = [5]
+// let tr = 10
 // function check(n,tr){
 //   for(let i=0;i<n.length;i++){
 //        if(n[i].includes(tr)) return true
@@ -31,7 +31,7 @@ let tr = 10
 // console.log(check(nu,tr))
 
 // let ans = nu.includes(tr)
-let j= nu.length-1
+// let j= nu.length-1
 // console.log(nu[0],nu[j]);
 
 
