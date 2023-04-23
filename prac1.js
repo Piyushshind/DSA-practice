@@ -8,6 +8,7 @@
 // '456' 
 // "231" 
 // "312"
+
 // "321"
 // Given n and k, return the kth permutation sequence.
 //  
