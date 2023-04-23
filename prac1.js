@@ -6,7 +6,7 @@
 // "132"
 // "213"
 // '456' 
-// "231" 
+// "231" mm
 // "312"
 // "321"
 // Given n and k, return the kth permutation sequence.
