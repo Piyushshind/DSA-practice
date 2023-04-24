@@ -43,10 +43,6 @@ var removeDuplicates = function (n) {
 //    return ans1
 // }
 
-let a = 3;
-++a;
-a=a+5;
-a--
-console.log(a);
+
 
 
