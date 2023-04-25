@@ -18,9 +18,17 @@ function capitaliez(arr) {
   }
   return newArr;
 }
-console.log(capitaliez(arr)); 
+// console.log(capitaliez(arr)); 
 // console.log(newArr);
 
 
 // second method  
 
+function capitaliezFirst(arr) {
+  if(arr.length==0)return arr;
+  else{
+    return  [arr[0][0].toUpperCase() + arr[0].slice(1) , ...capitaliezFirst(arr.slice(1))]
+  }
+}
+
+console.log(capitaliezFirst(arr));
