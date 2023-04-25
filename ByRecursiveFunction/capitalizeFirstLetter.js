@@ -20,3 +20,7 @@ function capitaliez(arr) {
 }
 console.log(capitaliez(arr)); 
 // console.log(newArr);
+
+
+// second method  
+
