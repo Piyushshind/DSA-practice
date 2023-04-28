@@ -14,8 +14,10 @@ function longSunString(str){
         mp.set(str[j],1)
         j++
         ans = Math.max(j-i,ans)
+        // console.log(i,j);
     }
-    return ans
+    // return ans
+    return str.slice(i,j)
 }
 
 console.log(longSunString(str));
