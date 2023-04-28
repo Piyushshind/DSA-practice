@@ -46,3 +46,36 @@ function remDupli(arr) {
  
 let answer = remDupli(arr);
 console.log(answer);
+
+
+// var removeDuplicates = function (nums) {
+//   if (nums.length == 0) return 0;
+//   else {
+//     let i = 0;
+//     for (let j = 1; j < nums.length; j++) {
+//       if (nums[j] != nums[i]) {
+//         i++;
+//         nums[i] = nums[j];
+//       }
+//     }
+//     return i + 1;
+//   }
+// };
+
+var removeDuplicates = function (n) {
+   let i=0,j=1,l=n.length,arr=[]
+   while(i<l){
+       if(n[i]==n[j]){
+           i++
+           j++
+       }else if(n[i]!==n[j]){
+           arr.push(n[i])
+           i++
+           j++
+       }
+   }
+   // console.log(arr)
+   return arr
+};
+
+console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4,5,67]));
