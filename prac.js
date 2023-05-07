@@ -8,3 +8,4 @@ let obj2 = {
 
 console.log(obj2.name);
 
+//
