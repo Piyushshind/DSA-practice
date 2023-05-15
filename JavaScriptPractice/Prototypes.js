@@ -8,4 +8,4 @@ Array.prototype.convertArrayToObject = function(){
       return newObj;
 }
 
-console.log(arr.convertArrayToObject());
+// console.log(arr.convertArrayToObject());
