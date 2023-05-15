@@ -91,7 +91,7 @@ let arrr =[1,2,3,4,5,6,7];
 
 // obja.array.forEach(element => {
 //     console.log(element);
-// });////
+// });///
 
 for (let a in obja){
     console.log(a);
