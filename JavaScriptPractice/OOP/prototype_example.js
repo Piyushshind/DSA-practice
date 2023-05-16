@@ -11,7 +11,7 @@
 //     }
 // };
 
-// console.log(myObject.toString()); // Greetings from Madrid
+/// console.log(myObject.toString()); // Greetings from Madrid
 
 
 function Student() {
