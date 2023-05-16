@@ -84,7 +84,7 @@ console.log(bipulManager.calculateBonus())
 
 // Create a developer
 // Create a tester
-// create a designer
+/// create a designer
 
 function Test() {
     console.log("test")
