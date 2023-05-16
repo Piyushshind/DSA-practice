@@ -1,4 +1,4 @@
-class Game { // abstract class
+class Game { /// abstract class
     constructor() {
         console.log("This game is called ")
         if (this.constructor === Game) {
