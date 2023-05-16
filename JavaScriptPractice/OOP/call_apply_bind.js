@@ -57,7 +57,7 @@ let PrintName = {
     name: "steve",
     sayHi: function () {
 
-        // Here "this" points to nameObj
+        /// Here "this" points to nameObj
         console.log(this.name);
     }
 }
