@@ -98,25 +98,30 @@ var searchRange = function (nu, tr) {
 
 function findFirstLast(arr, key) {
     let i = 0;
-    let  r = arr.length - 1;
+    let r = arr.length - 1;
+
+
+    if (nums.length < 1) {
+        return [-1, -1];
+    }
 
     while (i <= r) {
         let mid = Math.floor((i + r) / 2);
         if (arr[mid] == key) {
             let leftMid = mid;
             let rightMid = mid;
-            while (arr[leftMid -1] == key || arr[rightMid +1] == key) {
-                if (arr[leftMid -1] == key) leftMid--;
+            while (arr[leftMid - 1] == key || arr[rightMid + 1] == key) {
+                if (arr[leftMid - 1] == key) leftMid--;
                 if (arr[rightMid + 1] == key) rightMid++;
             }
             return [leftMid, rightMid]
         }
-        if (arr[mid] > key){
+        if (arr[mid] > key) {
             i = mid + 1
         } i = mid + 1
-        if (arr[mid] < key){
+        if (arr[mid] < key) {
             r = mid - 1
-        } 
+        }
     }
     // return [-1,-1]
 }
@@ -125,37 +130,36 @@ function findFirstLast(arr, key) {
 
 
 
-function searchRange(nums,target) {
+function searchRange(nums, target) {
     let l = 0;
     let r = nums.length - 1;
-  
+
     if (nums.length < 1) {
-      return [-1, -1];
+        return [-1, -1];
     }
-    
-    while(l <= r) {
-      let mid = Math.floor((l + r) / 2);
-  
-      if (nums[mid] == target) {
-        let lM = mid;
-        let rM = mid;
-  
-        while (nums[lM - 1] == target || nums[rM + 1] == target) {
-          if (nums[lM - 1] == target) lM--;
-          if (nums[rM + 1] == target) rM++;
+
+    while (l <= r) {
+        let mid = Math.floor((l + r) / 2);
+
+        if (nums[mid] == target) {
+            let lM = mid;
+            let rM = mid;
+
+            while (nums[lM - 1] == target || nums[rM + 1] == target) {
+                if (nums[lM - 1] == target) lM--;
+                if (nums[rM + 1] == target) rM++;
+            }
+            return [lM, rM];
         }
-        return [lM, rM];
-      }
-  
-      if (nums[mid] < target) {
-        l = mid + 1;
-      }
-      if (nums[mid] > target) {
-        r = mid - 1;
-      }
+
+        if (nums[mid] < target) {
+            l = mid + 1;
+        }
+        if (nums[mid] > target) {
+            r = mid - 1;
+        }
     }
     return [-1, -1];
-  };
+};
 
 //   console.log(searchRange([1,2,3,3,3,4,4,4,4,4,5,5,5],4));
- 
