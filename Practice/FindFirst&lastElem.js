@@ -101,7 +101,7 @@ function findFirstLast(arr, key) {
     let r = arr.length - 1;
 
 
-    if (nums.length < 1) {
+    if (arr.length < 1) {
         return [-1, -1];
     }
 
@@ -117,16 +117,16 @@ function findFirstLast(arr, key) {
             return [leftMid, rightMid]
         }
         if (arr[mid] > key) {
-            i = mid + 1
+            i = mid - 1
         } i = mid + 1
         if (arr[mid] < key) {
-            r = mid - 1
+            r = mid + 1
         }
     }
-    // return [-1,-1]
+    return [-1,-1]
 }
 
-// console.log(findFirstLast([1, 2, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5], 3));
+// console.log(findFirstLast([1, 2, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5,6,6],4));
 
 
 
@@ -162,4 +162,4 @@ function searchRange(nums, target) {
     return [-1, -1];
 };
 
-//   console.log(searchRange([1,2,3,3,3,4,4,4,4,4,5,5,5],4));
+//   console.log(searchRange([1,2,3,3,3,4,4,4,4,4,5,5,5],5));
