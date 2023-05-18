@@ -121,7 +121,7 @@ function findFirstLast(arr, key) {
     // return [-1,-1]
 }
 
-console.log(findFirstLast([1, 2, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5], 3));
+// console.log(findFirstLast([1, 2, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5], 3));
 
 
 
