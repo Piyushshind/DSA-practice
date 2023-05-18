@@ -123,7 +123,7 @@ function findFirstLast(arr, key) {
             r = mid + 1
         }
     }
-    return [-1,-1]
+    return [-1, -1]
 }
 
 // console.log(findFirstLast([1, 2, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5,6,6],4));
