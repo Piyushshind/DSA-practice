@@ -107,7 +107,7 @@ function findFirstLast(arr, key) {
             let rightMid = mid;
             while (arr[leftMid -1] == key || arr[rightMid +1] == key) {
                 if (arr[leftMid -1] == key) leftMid--;
-                if (arr[rightMid + 1] == key) rightMid++
+                if (arr[rightMid + 1] == key) rightMid++;
             }
             return [leftMid, rightMid]
         }
