@@ -10,7 +10,7 @@
 // "312"
 // "321"
 // Given n and k, return the kth permutation sequence.
-//// ///
+//// //
 function arra(arr,n,k){
      let str ='';
      for(let i=0;i<k;i++){
