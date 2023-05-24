@@ -9,3 +9,21 @@ class Person {
 }
 let ans = new Person('piyush', 23)
 console.log(ans.getName());
+
+class Home {
+    constructor(address, plot, members){
+           this.address = address,
+           this.plot = plot,
+           this.members = members
+    }
+
+    getAdderes = () => {
+        return this.address
+    }
+    getPlot = () => {
+        return 
+    }
+    getMembers = () => {
+        
+    }
+}
