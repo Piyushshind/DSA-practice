@@ -1,11 +1,11 @@
 class Person {
-    constructor(name, age){
+    constructor(name, age) {
         this.name = name,
-        this.age = age
+            this.age = age
     }
     getName = () => {
         return this.age
     }
 }
-let ans = new Person('piyush' , 23)
+let ans = new Person('piyush', 23)
 console.log(ans.getName());
