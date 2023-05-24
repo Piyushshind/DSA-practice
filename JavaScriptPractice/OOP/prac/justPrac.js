@@ -21,7 +21,7 @@ class Home {
         return this.address
     }
     getPlot = () => {
-        return 
+        return this.plot
     }
     getMembers = () => {
         
