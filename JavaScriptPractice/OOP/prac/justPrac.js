@@ -24,6 +24,6 @@ class Home {
         return this.plot
     }
     getMembers = () => {
-        
+        return this.members
     }
 }
