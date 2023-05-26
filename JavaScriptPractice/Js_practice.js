@@ -27,7 +27,7 @@ var removeDuplicates = function (n) {
 
 // function check(nu,tr){
 //   return nu.includes(tr)
-// }
+// }  
 // console.log(check(nu,tr))
 
 // let ans = nu.includes(tr)
