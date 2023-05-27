@@ -25,7 +25,17 @@ function arra(arr,n,k){
 
 // console.log(arra([1,2,3,4,5,6],3,3));
 
-var string = 'Scaler Academy';
+// var string = 'Scaler';
 
-string = string.substring(1, string.length-1);
-console.log(string);
+// string = string.substring(1, string.length-1);
+// // console.log(string);
+
+// function reverseFirst(w){
+//       return (w.slice(-1) + w.slice(0,-1))
+//   }
+//   console.log(reverseFirst("piyush"));
+
+
+//Input: s = "God Ding"
+//Output: "doG gniD"
+
