@@ -39,3 +39,19 @@ function arra(arr,n,k){
 //Input: s = "God Ding"
 //Output: "doG gniD"
 
+var reverseWords = function(s) {
+     let a = s.split(' ')
+     let n= a.length
+     let arr = []
+     function reverseFirst(w){
+          return (w.slice(-1) + w.slice(0,-1))
+     }
+     for(let i=0;i<n;i++){
+          arr.push(reverseFirst(a[i]))
+          // return arr
+     }
+      
+     return arr.join(" ")
+ };
+
+ console.log(reverseWords("Let's take LeetCode contest"));
