@@ -23,4 +23,9 @@ function arra(arr,n,k){
 
 }
 
-console.log(arra([1,2,3,4,5,6],3,3));
+// console.log(arra([1,2,3,4,5,6],3,3));
+
+var string = 'Scaler Academy';
+
+string = string.substring(1, string.length-1);
+console.log(string);
