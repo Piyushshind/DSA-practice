@@ -81,7 +81,7 @@ function createCart() {
         // console.log(gen.next().value);
         // Expected output:20 
         //
-        //console.log(gen.next().value); 
+        // console.log(gen.next().value); 
         // console.log(gen.next())
     }
 }
