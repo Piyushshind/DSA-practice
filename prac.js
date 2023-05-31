@@ -43,7 +43,7 @@ let increment2 = counter();
 // increment()
 // increment()
 // increment2()
-// i wAs gettin 
+//  i wAs gettin 
 // Example Ecommerce cart
 
 function createCart() {
