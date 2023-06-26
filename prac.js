@@ -23,7 +23,7 @@ function homeLoan(principal) {
 // console.log(hl_interest())
 // let hl_interest = function () {
 //     return roi * principal;
-//   }
+//  }
 
 
 function counter() {
