@@ -48,7 +48,7 @@ var reverseWords = function(s) {
      }
      for(let i=0;i<n;i++){
           arr.push(reverseFirst(a[i]))
-          // return arr
+          //  return arr
      }
       
      return arr.join(" ")
