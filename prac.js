@@ -31,7 +31,7 @@ function counter() {
     return function () {
 
         run++;
-          // console.log(run)
+        // console.log(run)
     }
 }
 
@@ -71,31 +71,31 @@ function createCart() {
             yield i + 10;
             while (true) yield i + 10
         }
-        
+
         const gen = generator(10);
-        
-        
+
+
         // console.log(gen.next())
         // console.log(gen.next().value);
         // Expected output: 10
         // console.log(gen.next())
         // console.log(gen.next().value);
         // Expected output:20 
-        
+
 
         // console.log(gen.next().value); 
         // console.log(gen.next())
     }
 }
 
-let obja ={1:4,2:2,3:3};
-let arrr =[1,2,3,4,5,6,7];
+let obja = { 1: 4, 2: 2, 3: 3 };
+let arrr = [1, 2, 3, 4, 5, 6, 7];
 
 // obja.array.forEach(element => {
 //     console.log(element);
 // });
 
-for (let a in obja){
+for (let a in obja) {
     console.log(a);
 }
 
