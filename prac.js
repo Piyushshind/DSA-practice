@@ -31,7 +31,7 @@ function counter() {
     return function () {
 
         run++;
-        // console.log(run)
+        // jsconsole.log(run)
     }
 }
 
