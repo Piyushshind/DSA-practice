@@ -33,7 +33,7 @@ function arra(arr,n,k){
 // function reverseFirst(w){
 //       return (w.slice(-1) + w.slice(0,-1))
 //   }
-//   console.log(reverseFirst("piyush"));
+//    console.log(reverseFirst("piyush"));
 
 
 //Input: s = "God Ding"
