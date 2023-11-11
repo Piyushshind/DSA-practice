@@ -13,7 +13,7 @@ while (i < n && j < m) {
     else {
         c[k] = b[j]
         k++
-        j++
+         j++
     }
 }
 
