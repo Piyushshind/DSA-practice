@@ -6,14 +6,14 @@ function sliding(arr, k) {
   for (let i = 0; i < k; i++) {
     sum += arr[i];
   }
-  
+
   let max = sum;
 
   for (let j = k; j < arr.length; j++) {
     sum += arr[j] - arr[j - k];
     max = Math.max(sum, max);
   }
-   return max;
+  return max;
 }
 
 console.log(sliding(arr, 4));
