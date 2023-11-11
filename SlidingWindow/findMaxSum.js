@@ -13,7 +13,7 @@ function sliding(arr, k) {
     sum += arr[j] - arr[j - k];
     max = Math.max(sum, max);
   }
-  return max;
+   return max;
 }
 
 console.log(sliding(arr, 4));
