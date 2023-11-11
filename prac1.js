@@ -23,7 +23,7 @@ function arra(arr,n,k){
 
 }
 
-// console.log(arra([1,2,3,4,5,6],3,3));
+//  console.log(arra([1,2,3,4,5,6],3,3));
 
 // var string = 'Scaler';
 
