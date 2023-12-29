@@ -63,7 +63,7 @@ function createCart() {
         let index = items.findIndex(obj => obj.item === itemname);
         if (index == -1) return;
         total -= items[index].price;
-        //  console.log(`Hey yo`)
+        // console.log(`Hey yo`)
 
 
         function* generator(i) {
