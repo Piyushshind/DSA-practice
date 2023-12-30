@@ -23,6 +23,7 @@ function homeLoan(principal) {
 // console.log(hl_interest())
 // let hl_interest = function () {
 //     return roi * principal;
+//  https://youtu.be/VQKEXirlIWg?si=GJPstXilCkT9uogn
 // }
 
 
