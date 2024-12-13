@@ -11,15 +11,15 @@
 // "321"
 // Given n and k, return the kth permutation sequence.
 //
-function arra(arr,n,k){
-     let str ='';
-     for(let i=0;i<k;i++){
-         str += arr[i]
-       for(let j=i+1; j<k; j++){
-        str+=(arr[j])
-       }
-    }
-     return str ;
+function arra(arr, n, k) {
+     let str = '';
+     for (let i = 0; i < k; i++) {
+          str += arr[i]
+          for (let j = i + 1; j < k; j++) {
+               str += (arr[j])
+          }
+     }
+     return str;
 
 }
 
@@ -39,21 +39,30 @@ function arra(arr,n,k){
 //Input: s = "God Ding"
 //Output: "doG gniD"
 
-var reverseWords = function(s) {
+var reverseWords = function (s) {
      let a = s.split(' ')
-     let n= a.length
+     let n = a.length
      let arr = []
-     function reverseFirst(w){
-          return (w.slice(-1) + w.slice(0,-1))
+     function reverseFirst(w) {
+          return (w.slice(-1) + w.slice(0, -1))
      }
-     for(let i=0;i<n;i++){
+     for (let i = 0; i < n; i++) {
           arr.push(reverseFirst(a[i]))
           //  return arr
      }
-      
+
      return arr.join(" ")
- };
+};
 //
 //  console.log(reverseWords("Let's take LeetCode contest"));
 
-console.log("a"==="a");
+console.log("a" === "a");
+
+// sort array
+
+const sortArr = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+  
+   
+    }
+}

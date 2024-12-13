@@ -1,181 +1,48 @@
-let obj = {
-    name: 'piyush'
-}
-let obj2 = {
-    age: 23,
-    __proto__: obj   /// __proto__ is syntax (prototype) to asses another object
+// Function to check if a year is a leap year (contains a defect)
+function isLeapYear(year) {
+    return year % 4 === 0; // Incorrect leap year calculation
 }
 
-// console.log(obj2.name);
+// Function to calculate the next date
+function getNextDate(day, month, year) {
+    const daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-
-function homeLoan(principal) {
-    let roi = 9.5;
-
-
-    /* ..... */
-    return function () {
-        return roi * principal / 100;
+    // Adjust February for leap years (contains a defect)
+    if (isLeapYear(year)) {
+        daysInMonth[1] = 29;
     }
-}
 
-// let hl_interest = homeLoan(1000000)
-// console.log(hl_interest())
-// let hl_interest = function () {
-//    return roi * principal;
-//  https://youtu.be/VQKEXirlIWg?si=GJPstXilCkT9uogn
-// }
+    // Increment the day
+    day++;
 
-
-function counter() {
-    let run = 0;
-    return function () {
-
-        run++;
-        //console.log(run)
+    // Check if the new day exceeds the number of days in the current month
+    if (day > daysInMonth[month - 1]) {
+        day = 1; // Set to the first day of the next month
+        month++;
     }
-}
 
-
-let increment = counter();
-let increment2 = counter();
-// increment()
-// increment()
-// increment()
-// increment()
-// increment2()
-// i  wAs gettin 
-// Example Ecommerce cart
-// // 
-
-function createCart() {
-
-    let items = [];
-    let total = 0;
-
-    function addItem({ item, price }) {
-        items.push({ item, price })
-        total += price;
-        // console.log(`Hey you have added ${item} with value ${price} and the total is ${total}`)
-
+    // Check if the month exceeds December (12)
+    if (month > 12) {
+        month = 1; // Set to January
+        // Forgot to increment the year here (contains a defect)
     }
-    function removeItem(itemname) {
 
-        let index = items.findIndex(obj => obj.item === itemname);
-        if (index == -1) return;
-        total -= items[index].price;
-        // console.log(`Hey yo`)
-
-
-        function* generator(i) {
-            yield i;
-            yield i + 10;
-            while (true) yield i + 10
-        }
-
-        const gen = generator(10);
-
-
-        // console.log(gen.next())
-        // console.log(gen.next().value);
-        // Expected output: 10
-        // console.log(gen.next())
-        // console.log(gen.next().value);
-        // Expected output:20 
-
-
-        // console.log(gen.next().value); 
-        // console.log(gen.next())
-    }
+    return [day, month, year];
 }
 
-let obja = { 1: 4, 2: 2, 3: 3 };
-let arrr = [1, 2, 3, 4, 5, 6, 7];
+// Function to display the current and next dates for a given day, month, and year
+function displayNextDate(day, month, year) {
+    // Display the current date
+    console.log(`Current Date: ${day}/${month}/${year}`);
 
-// obja.array.forEach(element => {
-//  console.log(element);
-// });
+    // Calculate the next date
+    const [nextDay, nextMonth, nextYear] = getNextDate(day, month, year);
 
-for (let a in obja) {
-    console.log(a);
+    // Display the next date
+    console.log(`Next Date: ${nextDay}/${nextMonth}/${nextYear}`);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Example test case (replace with user input if needed)
+displayNextDate(31, 12, 2021); // Should have defect in leap year calculation and year increment
+displayNextDate(28, 2, 2020); // Leap year defect test
+displayNextDate(29, 2, 2021); // Non-leap year February 29 test (invalid date)
