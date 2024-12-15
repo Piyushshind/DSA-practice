@@ -62,7 +62,6 @@ console.log("a" === "a");
 
 const sortArr = (arr) => {
     for (let i = 0; i < arr.length; i++) {
-  
    
     }
 }
