@@ -58,7 +58,7 @@ var reverseWords = function (s) {
 
 console.log("a" === "a");
 
-//  sort array
+//so rt array
 
 const sortArr = (arr) => {
     for (let i = 0; i < arr.length; i++) {
