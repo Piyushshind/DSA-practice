@@ -4,4 +4,6 @@ class queueWithObject { // with pointer
       this.first = 0;
       this.last = 0;
     }
+
+    
 }
