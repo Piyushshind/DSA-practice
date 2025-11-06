@@ -25,3 +25,5 @@ s.push(7);
 s.push(455);
 
 console.log(s.showAllItems());
+
+
